@@ -2,9 +2,186 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Средства для ухода</title>
 </head>
 <body>
+	<header>
+		<img src="images/logo_header.png" alt="Лого барбершоп" width="111" height="24">
+		<nav>
+		<ul>
+			<li><a href="info.html">Информация</a></li>
+			<li><a href="news.html">Новости</a> </li>
+			<li><a href="price.html">Прайс-лист</a> </li>
+			<li><a href="catalog.html">Магазин</a> </li>
+			<li><a href="contacts.html">Контакты</a> </li>
+		</ul>
+		</nav>
+		<ul>
+			<li>
+				<button type="button">Вход</button>
+			</li>
+		</ul>
+	</header>
+
+	<main>
+		<h2>СРЕДСТВА ДЛЯ УХОДА</h2>
+		<ul>
+			<li><a href="index.html">ГЛАВНАЯ</a>  </li>
+			<li><a href="shop.html"></a> МАГАЗИН</li>
+			<li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a> </li>
+		</ul>
+		<section>
+			<form class="filter" method="get" action="echo/html">
+				<fieldset>
+					<legend>Каталог</legend>
+					<label>
+					<input type="checkbox" name="Baxter of California" checked>
+					Baxter of California</label>
+					<label>
+					<input type="checkbox" name="Mr Natty">
+					Mr Natty</label>
+					<label>
+					<input type="checkbox" name="Suavecito" checked>
+					Suavecito</label>
+					<label>
+					<input type="checkbox" name="Malin+Goetz">
+					Malin+Goetz</label>
+					<label>
+					<input type="checkbox" name="Murray’s">
+					Murray’s</label>
+					<label>
+					<input type="checkbox" name="American Crew" checked>
+					American Crew
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Группы товаров</legend>
+					<label>
+					<input type="radio" name="shaving_accessories">
+					Бритвенные 
+					принадлежности</label>
+					<label>
+					<input type="radio" name="care_products" checked>
+					Средства для ухода</label>
+					<label>
+					<input type="radio" name="accessories">
+					Аксессуары</label>
+				</fieldset>
+				<button type="button">показать</button>
+			</form>
+		</section>
+		<section>
+			<div>
+				<figure>
+					<img src="images/shop_item_1.png" alt="Набор для путешествий 
+					«Baxter of California»" width="220" height="165">
+					<figcaption>Набор для путешествий 
+					«Baxter of California»</figcaption>
+				</figure>
+				<span>2 900 ₽</span>
+				<a href="#">Купить</a>
+			</div>
+			<div>
+				<figure>
+					<img src="images/shop_item_2.png" alt="Увлажняющий кондиционер 
+					«Baxter of California»" width="220" height="165">
+					<figcaption>Увлажняющий кондиционер 
+					«Baxter of California»</figcaption>
+				</figure>
+				<span>750 ₽</span>
+				<a href="#">Купить</a>
+			</div>
+			<div>
+				<figure>
+					<img src="images/shop_item_3.png" alt="Гель для волос
+					«SUAVECITO" width="220" height="165">
+					<figcaption>Гель для волос
+					«SUAVECITO»</figcaption>
+				</figure>
+				<span>290 ₽</span>
+				<a href="#">Купить</a>
+			</div>
+			<div>
+				<figure>
+					<img src="images/shop_item_4.png" alt="Глина для укладки волос 
+					«American crew»" width="220" height="165">
+					<figcaption>Глина для укладки волос 
+					«American crew»</figcaption>
+				</figure>
+				<span>500 ₽</span>
+				<a href="#">Купить</a>
+			</div>
+			<div>
+				<figure>
+					<img src="images/shop_item_5.png" alt="Гель для волос
+					«AMERICAN CREW»" width="220" height="165">
+					<figcaption>Гель для волос
+					«AMERICAN CREW»</figcaption>
+				</figure>
+				<span>300 ₽</span>
+				<a href="#">Купить</a>
+			</div>
+			<div>
+				<figure>
+					<img src="images/shop_item_6.png" alt="Набор для бритья
+					«Baxter of California»" width="220" height="165">
+					<figcaption>Набор для бритья
+				«Baxter of California»</figcaption>
+				</figure>
+				<span>3 900 ₽</span>
+				<a href="#">Купить</a>
+			</div>
+		</section>
+		<a href="#">1</a>
+		<a href="shop.html">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		
+	</main>
+		
+
+	<footer>
+		<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+			<a href="map.html">КАК НАС НАЙТИ?</a> <br>
+			ТЕЛЕФОН: +7 (495) 666-02-66
+		</p>
+		<div>
+			<p>Давайте дружить</p>
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Вконтакте</a></li>
+				<li><a href="#">Instagram</a></li>
+			</ul>
+		</div>
+		<p>
+			Разработано
+			<a href="">Dissocial Web</a>
+		</p>
+	</footer>
+
+	<section>
+		<h2>Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль</p>
+		<form class="user_account" method="post" action="/echo/html/">
+			<p>
+				<label for="user_login"></label>
+				<input id="user_login" type="text" name="login" placeholder="Логин">
+			</p>
+			<p>
+				<label for="user_password"></label>
+				<input id="user_password" type="password" name="password" placeholder="Пароль">
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="remember">
+					Запомните меня
+				</label>
+			</p>
+				<a href="#">Я забыл пароль</a>
+		</form>
+		<button type="button">Войти</button>
+	</section>
 	
 </body>
 </html>
