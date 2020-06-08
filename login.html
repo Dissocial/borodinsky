@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Личный кабинет</title>
+</head>
+<body>
+		<h2>Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль</p>
+		<form class="user_account" method="post" action="/echo/html/">
+			<p>
+				<label for="user_login"></label>
+				<input id="user_login" type="text" name="login" placeholder="Логин">
+			</p>
+			<p>
+				<label for="user_password"></label>
+				<input id="user_password" type="password" name="password" placeholder="Пароль">
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="remember">
+					Запомните меня
+				</label>
+			</p>
+				<a href="#">Я забыл пароль</a>
+		</form>
+		<button type="button">Войти</button>
+	
+</body>
+</html>

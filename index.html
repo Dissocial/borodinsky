@@ -16,9 +16,7 @@
 		</ul>
 		</nav>
 		<div>
-			<li>
-				<button type="button">Вход</button>
-			</li>
+			<a href="login.html">Вход</a>
 		</div>
 		<a href="#">
 			<img src="images/logo-borodinsky.png" width="371" height="155" alt="Логотип Бородинский">
@@ -90,7 +88,25 @@
 		<section>
 			<h2>Записаться</h2>
 			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-		<!-- Form will be here -->
+			<form action="echo/html" method="post">
+				<div>
+					<label for="appointment_date">Дата</label>
+					<input type="date" id="appointment_date" name="date" value="2020-06-06">
+				</div>
+				<div>
+					<label for="appointment_time">Время</label>
+					<input type="time" id="appointment_time" name="time" value="10:00">
+				</div>	
+				<div>
+					<label for="appointment_name">Ваше имя</label>
+					<input type="text" id="appointment_name" name="name" value="" placeholder="Борода">
+				</div>
+				<div>
+					<label for="appointment_phone">Телефон</label>
+					<input type="tel" id="appointment_phone" name="phone" value="" pattern="[0-9]{11}" placeholder="+7(999)111-11-11">
+				</div>
+			</form>
+			<button type="submit"> Отправить</button>
 		</section>
 	</main>
 
@@ -138,6 +154,11 @@
 	</section>
 	<section>
 		<h2>Как до нас добраться</h2>
+		<div>
+			<img src="images/map.png" alt="БАРБЕРШОП «БОРОДИНСКИЙ»
+			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+			ТЕЛЕФОН: +7 (495) 666-02-66" width="812" height="574">
+		</div>
 		<button type="button">Закрыть</button>
 	</section>
 </body>
