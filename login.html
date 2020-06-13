@@ -3,28 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Личный кабинет</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="login_style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-		<h2>Личный кабинет</h2>
+	<main>
+	  <h1>Личный кабинет</h1>
 		<p>Введите пожалуйста свой логин и пароль</p>
 		<form class="user_account" method="post" action="/echo/html/">
-			<p>
+			<p class="user-login">
 				<label for="user_login"></label>
 				<input id="user_login" type="text" name="login" placeholder="Логин">
 			</p>
-			<p>
+			<p class="user-password">
 				<label for="user_password"></label>
 				<input id="user_password" type="password" name="password" placeholder="Пароль">
 			</p>
-			<p>
+			<p class="remember_checkbox">
 				<label>
-					<input type="checkbox" name="remember">
+					<input type="checkbox" name="remember" checked>
 					Запомните меня
 				</label>
 			</p>
 				<a href="#">Я забыл пароль</a>
 		</form>
-		<button type="button">Войти</button>
+		<button type="button" class="button">Войти</button>
+	</main>
 	
 </body>
 </html>

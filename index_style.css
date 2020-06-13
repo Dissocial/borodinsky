@@ -1,0 +1,133 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans Narrow", Arial, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+	background-color: #070707;
+	background-image: url(images/bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+
+}
+
+.main-section {}
+.visuality-hidden {}
+.advantages {}
+.advantages-list {
+	display: flex;
+	list-style: none;
+}
+.advantages-list_item {
+	text-align: center;
+}
+
+.advantages-list_item h3{
+	color: #f7f4f1;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 42px;
+}
+
+.advantages-list_item p{
+	color: #f7f4f1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.sections{
+	display: flex;
+	color: #000000;
+	background-color: #faf7f4;
+	background-image: url(images/pattern_sections.jpg);
+	background-position: 0 0;
+}
+.news {}
+
+.news h2{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 42px;
+}
+.news p{
+	font-size: 14px;
+	line-height: 24px;
+}
+.news-list {
+	list-style: none;
+}
+.news-list_item {}
+
+.news-list_item time{
+
+	text-transform: none;
+}
+
+.gallery {}
+.gallery h2{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 42px;
+}
+.contacts {}
+.contacts h2 {
+
+}
+.appointment {}
+.appointmet h2{
+
+}
+.appointment-date input {
+	font: inherit;
+	background: transparent;
+	border: 2px solid #000;
+	color: #51504f;
+	outline: #51504f;
+}
+.appointment_time input {
+	font: inherit;
+	background: transparent;
+	border: 2px solid #000;
+	color: #51504f;
+	outline: #51504f;
+}
+.appointment_name input {
+	font: inherit;
+	background: transparent;
+	border: 2px solid #000;
+	color: #51504f;
+	outline: #51504f;
+}
+.appointment_phone input {
+	font: inherit;
+	background: transparent;
+	border: 2px solid #000;
+	color: #51504f;
+	outline: #51504f;
+}
+.appointment_name input::placeholder{
+	color: #51504f
+}
+ 
+ .appointment_phone input::placeholder{
+	color: #51504f
+ }
+
+ .appointment-date input:focus ,
+ .appointment-date input:hover ,
+ .appointment_time input:focus ,
+ .appointment_time input:hover ,
+ .appointment_name input:focus ,
+ .appointment_name input:hover ,
+ .appointment_phone input:focus ,
+ .appointment_phone input:hover {
+ 	border: 2px solid #663d15;
+
+}

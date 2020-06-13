@@ -3,163 +3,179 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Барбершоп "Бородинский"</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="index_style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-	<header>
-		<nav>
-		<ul>
-			<li><a href="info.html">Информация</a></li>
-			<li><a href="news.html">Новости</a> </li>
-			<li><a href="price.html">Прайс-лист</a> </li>
-			<li><a href="shop.html.html">Магазин</a> </li>
-			<li><a href="#contacts">Контакты</a> </li>
+	<header class="header">
+		<nav class="nav">
+		<ul class="nav-list">
+			<li class="nav-list_item"><a href="info.html">Информация</a></li>
+			<li class="nav-list_item"><a href="news.html">Новости</a> </li>
+			<li class="nav-list_item"><a href="price.html">Прайс-лист</a> </li>
+			<li class="nav-list_item"><a href="shop.html.html">Магазин</a> </li>
+			<li class="nav-list_item"><a href="#contacts">Контакты</a> </li>
 		</ul>
 		</nav>
-		<div>
+		<div class="login">
 			<a href="login.html">Вход</a>
-		</div>
-		<a href="#">
-			<img src="images/logo-borodinsky.png" width="371" height="155" alt="Логотип Бородинский">
-		</a>
+		</div>	
 	</header>
-	<main>
-		<h1>Барбершоп "Бородинский"</h1>
-		<section>
-			<h2>Преимущества</h2>
-			<ul>
-				<li>
+	<main class="main-section">
+		<div class="logo">
+			<a href="#">
+				<img src="images/logo-borodinsky.png" width="371" height="155" alt="Логотип Бородинский">
+			</a>
+		</div>
+		<h1 class="visuality-hidden">Барбершоп "Бородинский"</h1>
+		<section class="advantages">
+			<h2 class="visuality-hidden">Преимущества</h2>
+			<ul class="advantages-list">
+				<li class="advantages-list_item">
 					<h3>Быстро</h3>
 					<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
 				</li>
-				<li>
+				<li class="advantages-list_item">
 					<h3>Круто</h3>
 					<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
 					МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
 					ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
 				</li>
-				<li>
+				<li class="advantages-list_item">
 					<h3>Дорого</h3>
 					<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
 				</li>
 			</ul>
 			
 		</section>
-
-		<section>
-			<h2>Новости</h2>
-			<ul>
-				<li>
-					<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-					<time datetime="2019-01-11">11 января</time>
-				</li>
-				<li>
-					<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-					<time datetime="2016-01-18">18 января</time>
-				</li>
-			</ul>
-			<a href="news.html">Все новости</a>
-		</section>
-
-		<section>
-			<h2>Фотогалерея</h2>
-			<figure>
-				<a href="#">
-					<img src="images/interior_barbershop.png" alt = "Интерьер Барбершопа" width="286" height="164">
-				</a>
-			</figure>
-			<button type="button">Назад</button>
-			<button type="button">Вперёд</button>
-		</section>
-		<section id="contacts">
-			<h2>Контактная информация</h2>
-			<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-				АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-				ТЕЛЕФОН: +7 (495) 666-02-66
-			</p>
-			<p>
-				ВРЕМЯ РАБОТЫ: <br>
-				ПН—ПТ: С 10:00 ДО 22:00<br>
-				СБ—ВС: С 10:00 ДО 19:00
-			</p>
-			<a href="map.html">Как проехать</a>
-			<a href="contacts.html">Обратная связь</a>
-		</section>
-
-		<section>
-			<h2>Записаться</h2>
-			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-			<form action="echo/html" method="post">
-				<div>
-					<label for="appointment_date">Дата</label>
-					<input type="date" id="appointment_date" name="date" value="2020-06-06">
+		<div class="sections">
+			<section class="news">
+				<h2>Новости</h2>
+				<ul class="news-list">
+					<li class="news-list_item">
+						<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+						<time datetime="2019-01-11">11 января</time>
+					</li>
+					<li class="news-list_item">
+						<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+						<time datetime="2016-01-18">18 января</time>
+					</li>
+				</ul>
+				<div class="button">
+					<a href="news.html">Все новости</a>
 				</div>
-				<div>
-					<label for="appointment_time">Время</label>
-					<input type="time" id="appointment_time" name="time" value="10:00">
-				</div>	
-				<div>
-					<label for="appointment_name">Ваше имя</label>
-					<input type="text" id="appointment_name" name="name" value="" placeholder="Борода">
+			</section>
+
+			<section class="gallery">
+				<h2>Фотогалерея</h2>
+				<figure>
+					<a href="#">
+						<img src="images/interior_barbershop.png" alt = "Интерьер Барбершопа" width="286" height="164">
+					</a>
+				</figure>
+				<button type="button" class="button">Назад</button>
+				<button type="button" class="button">Вперёд</button>
+			</section>
+		</div>
+
+		<div class="sections">
+			<section id="contacts" class="contacts">
+				<h2>Контактная информация</h2>
+				<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+					ТЕЛЕФОН: +7 (495) 666-02-66
+				</p>
+				<p>
+					ВРЕМЯ РАБОТЫ: <br>
+					ПН—ПТ: С 10:00 ДО 22:00<br>
+					СБ—ВС: С 10:00 ДО 19:00
+				</p>
+				<div class="button">
+					<a href="map.html">Как проехать</a>
 				</div>
-				<div>
-					<label for="appointment_phone">Телефон</label>
-					<input type="tel" id="appointment_phone" name="phone" value="" pattern="[0-9]{11}" placeholder="+7(999)111-11-11">
+				<div class="button">
+					<a href="contacts.html">Обратная связь</a>
 				</div>
-			</form>
-			<button type="submit"> Отправить</button>
-		</section>
+			</section>
+
+			<section class="appointment">
+				<h2>Записаться</h2>
+				<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+				<form action="echo/html" method="post">
+					<div class="appointment-date">
+						<label for="appointment_date">Дата</label>
+						<input type="date" id="appointment_date" name="date" value="2020-06-06">
+					</div>
+					<div class="appointment_time">
+						<label for="appointment_time">Время</label>
+						<input type="time" id="appointment_time" name="time" value="10:00">
+					</div>	
+					<div class="appointment_name">
+						<label for="appointment_name">Ваше имя</label>
+						<input type="text" id="appointment_name" name="name" value="" placeholder="Борода">
+					</div>
+					<div class="appointment_phone">
+						<label for="appointment_phone">Телефон</label>
+						<input type="tel" id="appointment_phone" name="phone" value="" pattern="[0-9]{11}" placeholder="+7(999)111-11-11">
+					</div>
+				</form>
+				<button type="submit" class="button"> Отправить</button>
+			</section>
+		</div>
 	</main>
 
-	<footer>
-		<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+	<footer class="footer">
+		<p class="adress">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
 			<a href="map.html">КАК НАС НАЙТИ?</a> <br>
 			ТЕЛЕФОН: +7 (495) 666-02-66
 		</p>
-		<div>
+		<div class="social-networks">
 			<p>Давайте дружить</p>
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Вконтакте</a></li>
-				<li><a href="#">Instagram</a></li>
+			<ul class="social-networks-list">
+				<li class="social-vk"><a href="#">Facebook</a></li>
+				<li class="social-fb"><a href="#">Вконтакте</a></li>
+				<li class="social-inst"><a href="#">Instagram</a></li>
 			</ul>
 		</div>
-		<p>
-			Разработано
-			<a href="">Dissocial Web</a>
+		<p class="copyright">
+			Разработано<br>
+			<a class="button" href="#">Dissocial\Web</a>
 		</p>
 	</footer>
 
-	<section>
+	<section class="user-account">
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль</p>
 		<form class="user_account" method="post" action="/echo/html/">
-			<p>
+			<p class="user-login">
 				<label for="user_login"></label>
 				<input id="user_login" type="text" name="login" placeholder="Логин">
 			</p>
-			<p>
+			<p class="user-password">
 				<label for="user_password"></label>
 				<input id="user_password" type="password" name="password" placeholder="Пароль">
 			</p>
-			<p>
+			<p class="remember_checkbox">
 				<label>
-					<input type="checkbox" name="remember">
+					<input type="checkbox" name="remember" checked>
 					Запомните меня
 				</label>
 			</p>
 				<a href="#">Я забыл пароль</a>
 		</form>
-		<button type="button">Войти</button>
+		<button type="button" class="button">Войти</button>
 	</section>
-	<section>
+	<section class="map">
 		<h2>Как до нас добраться</h2>
-		<div>
+		<div class="map-img">
 			<img src="images/map.png" alt="БАРБЕРШОП «БОРОДИНСКИЙ»
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
 			ТЕЛЕФОН: +7 (495) 666-02-66" width="812" height="574">
 		</div>
-		<button type="button">Закрыть</button>
+		<button type="button" class="button">Закрыть</button>
 	</section>
 </body>
 </html>

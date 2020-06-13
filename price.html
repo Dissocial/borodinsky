@@ -3,113 +3,114 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Прайс-Лист</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="price_style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-	<header>
-		<img src="images/logo_header.png" alt="Лого барбершоп" width="111" height="24">
-		<nav>
-		<ul>
-			<li><a href="info.html">Информация</a></li>
-			<li><a href="news.html">Новости</a> </li>
-			<li><a href="price.html">Прайс-лист</a> </li>
-			<li><a href="catalog.html">Магазин</a> </li>
-			<li><a href="contacts.html">Контакты</a> </li>
+	<header class="header">
+	<img src="images/logo_header.png" alt="Лого барбершоп" width="111" height="24">
+		<nav class="nav">
+		<ul class="nav-list">
+			<li class="nav-list_item"><a href="info.html">Информация</a></li>
+			<li class="nav-list_item"><a href="news.html">Новости</a> </li>
+			<li class="nav-list_item"><a href="price.html">Прайс-лист</a> </li>
+			<li class="nav-list_item"><a href="shop.html.html">Магазин</a> </li>
+			<li class="nav-list_item"><a href="#contacts">Контакты</a> </li>
 		</ul>
 		</nav>
-		<ul>
-			<li>
-				<button type="button">Вход</button>
-			</li>
-		</ul>
+		<div class="login">
+			<a href="login.html">Вход</a>
+		</div>	
 	</header>
-
 	<main>
 		<h1>Прайс-лист</h1>
-		<ul>
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="price.html">Прайс-лист</a></li>
+		<ul class="shop-list">
+			<li class="shop-links"><a href="index.html" >Главная</a></li>
+			<li class="shop-links"><a href="price.html" >Прайс-лист</a></li>
 		</ul>
-		<section>
+		<section class="main-columns">
 			<h2>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
-			<div>
+			<div class="best-products">
 				<h3>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
-				<ul>
-					<li>Baxter of California</li>
-					<li>Mr Natty</li>
-					<li>Suavecito</li>
-					<li>Malin+Goetz</li>
+				<ul class="best-product-list">
+					<li class="best-products-item">Baxter of California</li>
+					<li class="best-products-item">Mr Natty</li>
+					<li class="best-products-item">Suavecito</li>
+					<li class="best-products-item">Malin+Goetz</li>
 				</ul>
 			</div>
-			<div>
+			<div class="prices">
 				<h3>ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h3>
-				<table>
+				<table class="price-table">
 					<tr>
 						<td>СТРИЖКА</td>
-						<td>1500 ₽</td>
+						<td class="price">1500 ₽</td>
 					</tr>
 					<tr>
 						<td>СТРИЖКА БОРОДЫ</td>
-						<td>500 ₽</td>
+						<td class="price">500 ₽</td>
 					</tr>
 					<tr>
 						<td>НАКРУТКА УСОВ</td>
-						<td>350 ₽</td>
+						<td class="price">350 ₽</td>
 					</tr>
 				</table>
 			</div>
-			<div>
+			<div class="about-us">
 				<h3>НЕСКОЛЬКО СЛОВ О НАС:</h3>
 				<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
 				</p>
 			</div>
-			<div>
+			<div class="location">
 				<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
 				</p>
 			</div>
 		</section>
 	</main>
 
-	<footer>
-		<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+	<footer class="footer">
+		<p class="adress">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
 			<a href="map.html">КАК НАС НАЙТИ?</a> <br>
 			ТЕЛЕФОН: +7 (495) 666-02-66
 		</p>
-		<div>
+		<div class="social-networks">
 			<p>Давайте дружить</p>
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Вконтакте</a></li>
-				<li><a href="#">Instagram</a></li>
+			<ul class="social-networks-list">
+				<li class="social-vk"><a href="#">Facebook</a></li>
+				<li class="social-fb"><a href="#">Вконтакте</a></li>
+				<li class="social-inst"><a href="#">Instagram</a></li>
 			</ul>
 		</div>
-		<p>
-			Разработано
-			<a href="">Dissocial Web</a>
+		<p class="copyright">
+			Разработано<br>
+			<a class="button" href="#">Dissocial\Web</a>
 		</p>
 	</footer>
 
-	<section>
+	<section class="user-account">
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль</p>
 		<form class="user_account" method="post" action="/echo/html/">
-			<p>
+			<p class="user-login">
 				<label for="user_login"></label>
 				<input id="user_login" type="text" name="login" placeholder="Логин">
 			</p>
-			<p>
+			<p class="user-password">
 				<label for="user_password"></label>
 				<input id="user_password" type="password" name="password" placeholder="Пароль">
 			</p>
-			<p>
+			<p class="remember_checkbox">
 				<label>
-					<input type="checkbox" name="remember">
+					<input type="checkbox" name="remember" checked>
 					Запомните меня
 				</label>
 			</p>
 				<a href="#">Я забыл пароль</a>
 		</form>
-		<button type="button">Войти</button>
+		<button type="button" class="button">Войти</button>
 	</section>
 	
 </body>
