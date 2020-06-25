@@ -19,28 +19,55 @@ body{
 	justify-content: center;
 
 }
+/* Преимущества*/
+.advantages{
+	width: 924px;
+	margin-bottom: 70px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
 
 .advantages-list {
 	display: flex;
+	justify-content: space-around;
 	list-style: none;
+	padding-left: 0;
 }
 .advantages-list_item {
 	text-align: center;
+	position: relative;
 }
 
 .advantages-list_item h3{
 	color: #f7f4f1;
 	font-size: 30px;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 42px;
+}
+/*
+.advantages-list_item p::before{
+	content: "";
+	background: url(svg/romb.svg) no-repeat;
+	position: absolute;
+	top:50px;
+	left: 50px;
+	*/
+	
+	
+	
 }
 
 .advantages-list_item p{
 	color: #f7f4f1;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 24px;
+	width: 280px;
 }
+
+
+
 
 .sections{
 	display: flex;
@@ -48,6 +75,7 @@ body{
 	background-color: #faf7f4;
 	background-image: url(images/pattern_sections.jpg);
 	background-position: 0 0;
+	width: 940px;
 }
 .news {}
 
