@@ -14,12 +14,12 @@ body{
 	background-repeat: no-repeat;
 }
 
+.index-logo{
+	display: flex;
+	justify-content: center;
 
 }
 
-.main-section {}
-.visuality-hidden {}
-.advantages {}
 .advantages-list {
 	display: flex;
 	list-style: none;
@@ -63,27 +63,18 @@ body{
 .news-list {
 	list-style: none;
 }
-.news-list_item {}
 
 .news-list_item time{
 
 	text-transform: none;
 }
 
-.gallery {}
 .gallery h2{
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 42px;
 }
-.contacts {}
-.contacts h2 {
 
-}
-.appointment {}
-.appointmet h2{
-
-}
 .appointment-date input {
 	font: inherit;
 	background: transparent;
