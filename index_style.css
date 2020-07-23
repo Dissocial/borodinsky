@@ -17,6 +17,7 @@ body{
 .index-logo{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 80px;
 
 }
 /* Преимущества*/
@@ -40,23 +41,27 @@ body{
 }
 
 .advantages-list_item h3{
+	position: relative;
 	color: #f7f4f1;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 42px;
+	margin: 0;
+	padding-bottom: 60px;
 }
-/*
-.advantages-list_item p::before{
+
+.advantages-list_item h3::after{
 	content: "";
 	background: url(svg/romb.svg) no-repeat;
 	position: absolute;
+	width: 40px;
+	height: 40px;
 	top:50px;
-	left: 50px;
-	*/
-	
-	
-	
+	left:125px ;
 }
+	
+	
+
 
 .advantages-list_item p{
 	color: #f7f4f1;
@@ -64,22 +69,42 @@ body{
 	font-weight: 700;
 	line-height: 24px;
 	width: 280px;
+	margin: 0;
 }
 
 
-
+/*Первая секция */
 
 .sections{
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
 	color: #000000;
 	background-color: #faf7f4;
-	background-image: url(images/pattern_sections.jpg);
-	background-position: 0 0;
+	background-image:
+	url(svg/border.svg), 
+	url(images/pattern_sections.jpg);
+	background-position:center, 0 0;
+	background-repeat: no-repeat, repeat;
 	width: 940px;
+	margin-bottom: 36px;
+	margin-right: auto;
+	margin-left: auto;
 }
-.news {}
+.news{
+	width: 470px;
+}
+
+.news-content{
+	padding-left: 80px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-right: 40px;
+}
 
 .news h2{
+	margin: 0;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 42px;
@@ -89,57 +114,161 @@ body{
 	line-height: 24px;
 }
 .news-list {
+	padding-left: 0;
+	margin-top: 0;
 	list-style: none;
 }
 
 .news-list_item time{
-
 	text-transform: none;
 }
 
+.news-list_item:first-child p{
+	margin-top:-0.3em;
+	margin-bottom: 50px;
+}
+
+
+.gallery{
+	width: 470px;
+}
+.gallery-content{
+	padding-left: 80px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-right: 45px;
+}
+
+.gallery-content figure{
+	margin: 0;
+	padding-top: 38px;
+	padding-bottom: 44px;
+}
+
 .gallery h2{
+	margin: 0;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 42px;
 }
 
-.appointment-date input {
+/*Вторая секция */
+.contacts{
+	width: 470px;
+}
+
+.contacts-content{
+	padding-left: 80px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-right: 40px;
+}
+.contacts-content h2{
+	font-size: 30px;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+
+.contact__buttons{
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.button__direction{
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+.button__feedback{
+margin-right: 35px;
+}
+
+/* Форма записи */
+.appointment{
+	width: 470px;
+}
+
+.form-wrapper{
+	display: flex;
+	
+}
+
+.appointment-content{
+	padding-left: 80px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-right: 45px;
+}
+
+.appointment-content p{
+	margin: 0;
+	padding-bottom: 25px;
+	font-size: 14px;
+}
+.appointment-content h2{
+	font-size: 30px;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+/* Сама форма */
+.appointment-form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+p.appointment-item{
+	box-sizing: border-box;
+	padding:0;
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.appointment-item input {
+	box-sizing: border-box;
+	width: 140px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 7px;
+	padding-top: 8px;
 	font: inherit;
 	background: transparent;
 	border: 2px solid #000;
 	color: #51504f;
 	outline: #51504f;
 }
-.appointment_time input {
-	font: inherit;
-	background: transparent;
-	border: 2px solid #000;
-	color: #51504f;
-	outline: #51504f;
+.appointment-item input:first-child{
+	padding-right: 0;
+	z-index: 10;
 }
-.appointment_name input {
-	font: inherit;
-	background: transparent;
-	border: 2px solid #000;
-	color: #51504f;
-	outline: #51504f;
+input[type="date"]::-webkit-calendar-picker-indicator{
+	margin-right: -15px;
 }
-.appointment_phone input {
-	font: inherit;
-	background: transparent;
-	border: 2px solid #000;
-	color: #51504f;
-	outline: #51504f;
-}
-.appointment_name input::placeholder{
+.appointment-item input::placeholder{
 	color: #51504f
 }
  
- .appointment_phone input::placeholder{
+ .appointment-item input::placeholder{
 	color: #51504f
  }
 
- .appointment-date input:focus ,
+ .appointment-item label{
+	 display: block;
+	 margin-bottom: 9px;
+	 margin-left: 15px;
+ }
+
+ .button__submit{
+	width: 100%;
+ }
+
+ .appointment-item input:focus ,
  .appointment-date input:hover ,
  .appointment_time input:focus ,
  .appointment_time input:hover ,
